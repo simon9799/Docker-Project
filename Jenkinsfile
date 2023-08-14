@@ -24,7 +24,7 @@ pipeline {
     }
     stage('docker login') {
       steps {
-        withCredentials([usernameColonPassword(credentialsId: '718c49db-45a2-4fef-8b11-c84f50a2fe4a', variable: 'Docker login')])
+        withCredentials([usernameColonPassword(credentialsId: '718c49db-45a2-4fef-8b11-c84f50a2fe4a', variable: 'https://hub.docker.com/')])
     
       }
     }
